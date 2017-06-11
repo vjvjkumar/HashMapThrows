@@ -7,15 +7,16 @@ public class MethodOverLoading_CompileDemo {
 
 	public static void main(String[] args) 
 	{
-		MethodOverLoading_CompileDemo obj1 = new MethodOverLoading_CompileDemo();
+		MethodOverLoading_CompileDemo obj1 = new MethodOverLoading_CompileDemo(); //create object for non-static methods
 		
 		obj1.Add(12, 15);
 		obj1.Add(15, 25, 35);
 		obj1.Add(25.30, 18.56);
 		obj1.Add(1224.32, 15);
 		obj1.Add(12, 1234.78);
+		
 	}
-		public void Add(int a, int b)
+		public  void Add(int a, int b)
 		{
 			int c = a+b;
 			System.out.println("Sum of two numbers is: "+c);
@@ -35,7 +36,7 @@ public class MethodOverLoading_CompileDemo {
 			double sum = a+b;
 			System.out.println("Sum of two numbers is: "+sum);
 		}
-		public void Add(double a, int b)
+		public void  Add(double a, int b)
 		{
 			double sum = a+b;
 			System.out.println("Sum of two numbers is: "+sum);

@@ -8,6 +8,9 @@ public class HashMapping {
 	public static void main(String[] args) {
 		System.out.println("HashMap prog Started: ");
 		
+		/*int student [] = new int [10];
+		student[1] = 25;*/
+		
 		HashMap<Integer, String> HMap= new HashMap<Integer, String>();
 		
 		HMap.put(1, "apple");
@@ -19,14 +22,12 @@ public class HashMapping {
 		System.out.println(HMap.size());
 		System.out.println(HMap.get(3));
 		
-		for (Map.Entry<Integer, String> entry : HMap.entrySet()){
-			
+		for (Map.Entry<Integer, String> entry : HMap.entrySet())
+		{
 			int key = entry.getKey();
 			String value = entry.getValue();
 			
 			System.out.println(key+ "=" +value);
-			
-			
 		}
 	}
 
